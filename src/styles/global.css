@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  p {
+    @apply text-gray-400 leading-7;
+  }
+  a {
+    @apply text-violet-400 hover:text-violet-500 underline underline-offset-2;
+  }
+}
+
+@layer components {
+  .circle-button {
+    @apply flex items-center justify-center rounded-full w-8 h-8 transition-all ease-in duration-75 border-0-5 hover:border-white/50 border-white/30 hover:bg-white/10;
+  }
+  .button-link {
+    @apply text-gray-400 hover:text-gray-100 hover:bg-white/10 hover:rounded-full py-2 px-4 transition-all duration-75 ease-in no-underline;
+  }
+}
+
+#card:hover {
+  transform: rotateY(180deg);
+}
+
+/* ============ style hover styles ============ */
+.card {
+  transform-style: preserve-3d;
+}
+
+.card-front {
+  transform: rotateY(0);
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}

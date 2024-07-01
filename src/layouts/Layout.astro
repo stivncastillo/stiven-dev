@@ -1,0 +1,32 @@
+---
+import '@fontsource/work-sans';
+import '@fontsource/roboto';
+import '@fontsource/ibm-plex-mono';
+
+import '../styles/global.css';
+import Navbar from '../components/Layout/Navbar.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Astro description" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="generator" content={Astro.generator} />
+  <title>{title}</title>
+</head>
+<body class="bg-black text-gray-300">
+  <div class="w-max-[920px] m-auto ">
+    <Navbar />
+    <slot />
+  </div>
+</body>
+</html>

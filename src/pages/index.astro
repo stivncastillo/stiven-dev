@@ -1,0 +1,208 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+
+import TwitterIcon from '../../public/icons/basil_twitter-outline.svg?raw';
+import GithubIcon from '../../public/icons/mdi_github.svg?raw';
+import EnvelopeIcon from '../../public/icons/basil_envelope-outline.svg?raw';
+import LinkedinIcon from '../../public/icons/basil_linkedin-outline.svg?raw';
+import DribbleIcon from '../../public/icons/basil_dribbble-outline.svg?raw';
+import GridSkillItem from "../components/GridSkills/GridSkillItem";
+---
+
+<Layout title="Stiven Dev">
+  <main class=" max-w-[860px] m-auto pt-36 px-4 pb-10">
+    <div class=" flex flex-col justify-start space-y-4 mb-12">
+      <Image
+        src="/images/profile.png"
+        alt="Stiven Dev"
+        class="rounded-full w-24 h-24"
+        width={160}
+        height={160}
+      />
+      <p class=" text-gray-400">I'm <a href="#">Stiven</a>, a software developer focused on front-end engineering and interface design. Currently I'm working as Front-end developer at Elenas</p>
+    </div>
+
+    <section class="flex flex-row flex-1 w-full space-x-2 mb-12 font-sans">
+      <div class="flex flex-1 flex-col space-y-2">
+        <!-- <div class="group flex flex-col justify-center items-center space-y-2 border-0-5 border-gray-400/30 h-[120px] rounded-md hover:border-violet-400/50 hover:bg-gray-400/5 transition-all duration-75 hover:scale-105">
+          <Image
+            src="/icons/basil_lightning-alt-outline.svg"
+            alt="UI Design"
+            width="32"
+            height="32"
+          />
+          <span class="text-gray-400">UI Design</span>
+        </div> -->
+        <GridSkillItem client:visible />
+
+        <div class="group flex flex-col justify-center items-center space-y-2 border-0-5 border-gray-400/30 h-[120px] rounded-md hover:border-violet-400/50 hover:bg-gray-400/5">
+          <Image
+            src="/icons/basil_edit-alt-outline.svg"
+            alt="Illustration"
+            width="32"
+            height="32"
+          />
+          <span class=" text-gray-400">Illustration</span>
+        </div>
+        <div class="group flex flex-row justify-center items-center space-x-2 border-0-5 border-gray-400/30 rounded-md hover:border-violet-400/50 hover:bg-gray-400/5 h-[46px]">
+          <Image
+            src="/icons/basil_expand-outline.svg"
+            alt="Design"
+            width="24"
+            height="24"
+          />
+          <span class=" text-lg text-gray-400">Design</span>
+        </div>
+      </div>
+      <div class="flex flex-1 flex-col space-y-2">
+        <div class="group flex flex-col justify-center items-center space-y-2 border-0-5 border-gray-400/30 h-[120px] rounded-md hover:border-violet-400/50 hover:bg-gray-400/5">
+          <Image
+            src="/icons/basil_desktop-outline.svg"
+            alt="UI Design"
+            width="32"
+            height="32"
+          />
+          <span class=" text-gray-400">Front-end</span>
+        </div>
+        <div class="flex flex-row space-x-2">
+          <div class="group flex w-full flex-col justify-center items-center space-y-2 border-0-5 border-gray-400/30 h-[120px] rounded-md hover:border-violet-400/50 hover:bg-gray-400/5">
+            <Image
+              src="/icons/basil_server-outline.svg"
+              alt="Back-end"
+              width="28"
+              height="28"
+            />
+            <span class=" text-gray-400">Back-end</span>
+          </div>
+          <div class="group flex w-full flex-col justify-center items-center space-y-2 border-0-5 border-gray-400/30 h-[120px] rounded-md hover:border-violet-400/50 hover:bg-gray-400/5">
+            <Image
+              src="/icons/basil_mobile-phone-outline.svg"
+              alt="UI Design"
+              width="28"
+              height="28"
+            />
+            <span class=" text-gray-400">Mobile</span>
+          </div>
+        </div>
+        <div class=" group flex flex-row justify-center items-center space-x-2 border-0-5 border-gray-400/30 rounded-md hover:border-violet-400/50 hover:bg-gray-400/5 h-[46px]">
+          <Image
+            src="/icons/heroicons-outline_code.svg"
+            alt="Design"
+            width="22"
+            height="22"
+          />
+          <span class=" text-lg text-gray-400">Development</span>
+        </div>
+      </div>
+      <div class="flex flex-1 flex-col space-y-2">
+        <div class="group flex flex-col justify-center items-center space-y-2 border-0-5 border-gray-400/30 h-[120px] rounded-md hover:border-violet-400/50 hover:bg-gray-400/5">
+          <Image
+            src="/icons/basil_microphone-outline.svg"
+            alt="UI Design"
+            width="32"
+            height="32"
+          />
+          <span class=" text-gray-400">Stand-up comedy</span>
+        </div>
+        <div class="group flex flex-col justify-center items-center space-y-2 border-0-5 border-gray-400/30 h-[120px] rounded-md hover:border-violet-400/50 hover:bg-gray-400/5">
+          <Image
+            src="/icons/basil_diamond-outline.svg"
+            alt="Illustration"
+            width="32"
+            height="32"
+          />
+          <span class=" text-gray-400">Tattoo</span>
+        </div>
+        <div class=" group flex flex-row justify-center items-center space-x-2 border-0-5 border-gray-400/30 rounded-md hover:border-violet-400/50 hover:bg-gray-400/5 h-[46px]">
+          <Image
+            src="/icons/basil_heart-outline.svg"
+            alt="Design"
+            width="24"
+            height="24"
+          />
+          <span class=" text-lg text-gray-400">Hobbies</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col space-y-4 mb-12">
+      <div class="flex flex-row justify-between items-center border-b-0-5 pb-4 mb-8 border-gray-400/30">
+        <h2 class=" text-md font-sans font-bold text-gray-400">Latest Posts</h2>
+        <a href="#" class="group flex items-center justify-center rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-draplin text-[13px] tracking-[0.2px] leading-none cursor-pointer select-none hover:bg-white/10 font-medium w-fit px-3 py-2">
+          View all
+        </a>
+      </div>
+
+      <div class="flex flex-col flex-1">
+        <a href="#" class="flex flex-row items-start justify-between group p-4 hover:bg-gray-400/10 transition-all duration-75 ease-linear rounded-md no-underline">
+          <div class="flex flex-col flex-1">
+            <h3 class="text-md font-bold text-gray-300 mb-0">How to create a design system</h3>
+            <span class="text-sm text-gray-600 font-mono mb-2">May 4, 2024</span>
+            <span class=" no-underline group-hover:underline">React more</span>
+          </div>
+          <div>
+            <div class="flex flex-row w-auto items-center justify-center leading-none space-x-2 border-0-5 border-violet-800 bg-violet-800/40 text-violet-400 px-4 py-1 rounded-full">
+              <span class="text-sm">Design</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="flex flex-row items-start justify-between group p-4 hover:bg-gray-400/10 transition-all duration-75 ease-linear rounded-md no-underline">
+          <div class="flex flex-col flex-1">
+            <h3 class="text-md font-bold text-gray-300 mb-0">How to create a design system</h3>
+            <span class="text-sm text-gray-600 font-mono mb-2">May 4, 2024</span>
+            <span class=" no-underline group-hover:underline">React more</span>
+          </div>
+          <div>
+            <div class="flex flex-row w-auto items-center justify-center leading-none space-x-2 border-0-5 border-violet-800 bg-violet-800/40 text-violet-400 px-4 py-1 rounded-full">
+              <span class="text-sm">Design</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="flex flex-row items-start justify-between group p-4 hover:bg-gray-400/10 transition-all duration-75 ease-linear rounded-md no-underline">
+          <div class="flex flex-col flex-1">
+            <h3 class="text-md font-bold text-gray-300 mb-0">How to create a design system</h3>
+            <span class="text-sm text-gray-600 font-mono mb-2">May 4, 2024</span>
+            <span class=" no-underline group-hover:underline">React more</span>
+          </div>
+          <div>
+            <div class="flex flex-row w-auto items-center justify-center leading-none space-x-2 border-0-5 border-violet-800 bg-violet-800/40 text-violet-400 px-4 py-1 rounded-full">
+              <span class="text-sm">Design</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="flex flex-col space-y-4 mb-12 text-center">
+      <span>Would you like to take a look at my <a href="#">digital garden</a>?</span>
+    </section>
+  </main>
+
+  <footer class="flex flex-col w-full h-24 border-t border-gray-400/30">
+    <div class="flex flex-row items-center justify-between w-[860px] max-w-[860px] m-auto">
+      <span class="text-gray-400">© 2024 Stiven Dev</span>
+
+      <!-- social icons -->
+      <div class="flex flex-row space-x-4 mt-2">
+        <a href="#" class="circle-button text-gray-400 hover:text-violet-400 group hover:shadow-card hover:shadow-violet-400">
+          <Fragment set:html={EnvelopeIcon} />
+        </a>
+        <a href="#" class="circle-button text-gray-400 hover:text-violet-400 group hover:shadow-card hover:shadow-violet-400">
+          <Fragment set:html={TwitterIcon} />
+        </a>
+        <a href="#" class="circle-button text-gray-400 hover:text-violet-400 group hover:shadow-card hover:shadow-violet-400">
+          <Fragment set:html={GithubIcon} />
+        </a>
+        <a href="#" class="circle-button text-gray-400 hover:text-violet-400 group hover:shadow-card hover:shadow-violet-400">
+          <Fragment set:html={LinkedinIcon} />
+        </a>
+        <a href="#" class="circle-button text-gray-400 hover:text-violet-400 group hover:shadow-card hover:shadow-violet-400">
+          <Fragment set:html={DribbleIcon} />
+        </a>
+      </div>
+    </div>
+
+  </footer>
+</Layout>
